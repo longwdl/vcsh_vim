@@ -33,7 +33,7 @@ call plug#end()
 let g:snipMate = { 'snippet_version' : 1 }
 
 " Ignore types for shellcheck
-let g:syntastic_sh_shellcheck_args="-e SC2187,SC1091,SC2169"
+let g:syntastic_sh_shellcheck_args="-e SC1090,SC1091,SC2169,SC2187"
 " - Plugin config end
 
 " RUBY auto completed
@@ -62,6 +62,7 @@ set nu
 set tabstop=4
 set fencs=utf-8,gbk
 set t_Co=256
+set backspace=indent,eol,start
 
 " Highlight on/off
 set hlsearch
