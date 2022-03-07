@@ -1,8 +1,6 @@
 *
 !.vimrc
 !.vim
-!.vim/**/*
-.vim/plugged/*
 !.gitignore.d/
 !.gitignore.d/vim
 !.LICENSES.d/

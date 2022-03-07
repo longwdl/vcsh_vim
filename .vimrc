@@ -24,6 +24,7 @@ Plug 'garbas/vim-snipmate'
 Plug 'honza/vim-snippets'
 Plug 'ingydotnet/yaml-vim'
 Plug 'rhysd/vim-clang-format'
+Plug 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 " Initialize plugin system
 call plug#end()
@@ -71,14 +72,8 @@ map <silent> <Space> :noh<Bar>:echo<CR>
 " Vim buffer exchange the clipboard
 set clipboard=unnamed
 
-" Show statusline by powerline
-if isdirectory(expand($_POWERLINE_BIND_PATH))
-	if has('python3')
-		silent! python3 1
-	endif
-	set rtp+=$_POWERLINE_BIND_PATH/vim/
-	set laststatus=2
-endif
+" Set statusline for powerline
+set laststatus=2
 
 " Init list space
 if has("patch-7.4.710")
