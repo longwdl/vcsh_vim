@@ -1,4 +1,6 @@
 *
+!.setup.d/
+!.setup.d/10-vim
 !.vimrc
 !.vim
 !.gitignore.d/
